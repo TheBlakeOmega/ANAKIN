@@ -128,6 +128,10 @@ class PipeLineManager:
                 raise Exception("Error during Graphs widget creation")
 
     def _preProcessJSONDataset(self):
+        """
+        This method runs the pipeline topre process the JSON dataset
+        It filters the dataset by allowed packages and TF-IDF top strings
+        """
         allowed_packages = [
             "Landroid/accounts",
             "Landroid/app",
@@ -177,6 +181,10 @@ class PipeLineManager:
         test_dataset.filterDatasetByTFIDF(top_tfidf_string, self.ds_configuration['jsonTestPathDataset'])
 
     def _trainWord2VecModel(self):
+        """
+        This method runs the pipeline to train the Word2Vec model
+        It extracts the sequences from the JSON dataset and trains the model
+        """
         print("Extracting sequences from dataset in " + self.ds_configuration['jsonTrainPathDataset'])
         write_to_result_file("Extracting sequences from dataset in " + self.ds_configuration['jsonTrainPathDataset'])
         train_dataset = JsonDataset(self.ds_configuration['jsonTrainPathDataset'])
@@ -192,6 +200,10 @@ class PipeLineManager:
         write_to_result_file(str(embedding_model.stringEmbeddingModel.wv))
 
     def _generateGraphDataset(self):
+        """
+        This method runs the pipeline to generate the graph dataset
+        It loads the Word2Vec model and generates the graph dataset from the JSON dataset
+        """
         print("Loading Word2Vec model")
         write_to_result_file("Loading Word2Vec model")
         embedding_model = EmbeddingModel()
@@ -212,6 +224,10 @@ class PipeLineManager:
         test_graph_dataset.generateGraphDataset(test_json_dataset, embedding_model)
 
     def _trainGNNModel(self):
+        """
+        This method runs the pipeline to train the GNN model
+        It loads the graph dataset and trains the model according to the parameters in the configuration file
+        """
         print("Creating train and validation dataloaders")
         write_to_result_file("Creating train and validation dataloaders")
         train_graph_dataset = GraphDataset(self.ds_configuration['graphTrainDatasetPath'])
@@ -246,6 +262,9 @@ class PipeLineManager:
                              "\nTrain time: " + str(utils.convertTimeDelta(start_train_time, end_train_time)))
 
     def _testGNNModel(self):
+        """
+        This method runs the pipeline to test the GNN model
+        """
         print("Loading GNN model")
         write_to_result_file("Loading GNN model")
         model = GraphNetwork()
@@ -322,6 +341,10 @@ class PipeLineManager:
              max_evals=int(self.configuration['hyperopt_max_eval']))
 
     def _explainGCNModel(self):
+        """
+        This method runs the pipeline to explain the GNN model
+        It loads the GNN model, trains the GNN explainer model and generates the explanations for the test dataset
+        """
         print("Loading GNN model")
         write_to_result_file("Loading GNN model")
         model = GraphNetwork()
@@ -344,6 +367,10 @@ class PipeLineManager:
                                  "_edges_importance_scores.pkl")
 
     def _selectGraphExamplesToExplainFromTestSet(self):
+        """
+        This method runs the pipeline to select the examples to explain from the test set
+        It loads the GNN model and the test dataset and selects the examples to explain according to the parameters in the configuration file
+        """
         print("Loading GNN model")
         write_to_result_file("Loading GNN model")
         model = GraphNetwork()
@@ -384,6 +411,10 @@ class PipeLineManager:
                                               + "SubGraphsInfo.xlsx")
 
     def _generateWidgetGraphFilesToShow(self):
+        """
+        This method runs the pipeline to generate the widget graph files to show
+        It loads the GNN model and the test dataset and generates the widget graph files to show according to the parameters in the configuration file
+        """
         test_graph_dataset = GraphDataset(self.ds_configuration['graphTestDatasetPath'])
 
         file_names_example_to_explain = [file_name for file_name in

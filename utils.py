@@ -10,14 +10,43 @@ result_file = None
 
 
 def custom_tokenizer(text):
+    """
+    Custom tokenizer function.
+
+    Args:
+        text (str): Input text to tokenize.
+
+    Returns:
+        str: Tokenized text.
+    """
     return text
 
 
 def collate_fn(batch):
+    """
+    Collates a batch of data into a PyTorch Geometric Batch object.
+
+    Args:
+        batch (list): List of data objects.
+
+    Returns:
+        Batch: Collated batch object.
+    """
     return Batch.from_data_list(batch)
 
 
 def generateGraphFromSequence(sequence, embedding_model, label):
+    """
+    Generates a graph from a sequence of strings.
+
+    Args:
+        sequence (list): List of strings representing the sequence.
+        embedding_model: Model used to generate embeddings for strings.
+        label (int): Label for the graph.
+
+    Returns:
+        Data: PyTorch Geometric Data object representing the graph.
+    """
     node_map = {}
     node_features = []
     node_names = []
@@ -42,7 +71,7 @@ def generateGraphFromSequence(sequence, embedding_model, label):
     edge_attr = torch.tensor(np.array(list(edges_with_frequencies.values())), dtype=torch.float).unsqueeze(1)
     node_features = torch.tensor(np.array(node_features), dtype=torch.float)
 
-    # check if there's no edges; in this case a self loop will be added to the only node existing
+    # Check if there are no edges; add a self-loop if necessary
     if edge_index.numel() == 0:
         edge_index = torch.tensor([[0], [0]], dtype=torch.int32)
         edge_attr = torch.tensor([[0.0]], dtype=torch.float)
@@ -52,6 +81,18 @@ def generateGraphFromSequence(sequence, embedding_model, label):
 
 
 def generateTensorSequence(sequence, embedding_model, sequence_length, label):
+    """
+    Generates a tensor sequence from a list of strings.
+
+    Args:
+        sequence (list): List of strings representing the sequence.
+        embedding_model: Model used to generate embeddings for strings.
+        sequence_length (int): Length of the sequence.
+        label (int): Label for the sequence.
+
+    Returns:
+        dict: Dictionary containing tensors for the sequence and label.
+    """
     if len(sequence) > sequence_length:
         embedded_sequences = []
         for current_string in sequence[-sequence_length:]:
@@ -67,6 +108,17 @@ def generateTensorSequence(sequence, embedding_model, sequence_length, label):
 
 
 def generateGraphsFromJson(json_example, embedding_model, label):
+    """
+    Generates graphs from a JSON example.
+
+    Args:
+        json_example (dict): JSON object containing the data.
+        embedding_model: Model used to generate embeddings for strings.
+        label (int): Label for the graphs.
+
+    Returns:
+        list: List of PyTorch Geometric Data objects representing the graphs.
+    """
     graphs = []
     for macro_category in json_example.keys():
         for level_one_action in json_example[macro_category].keys():
@@ -76,6 +128,18 @@ def generateGraphsFromJson(json_example, embedding_model, label):
 
 
 def generateSequencesFromJson(json_example, embedding_model, sequence_length, label):
+    """
+    Generates tensor sequences from a JSON example.
+
+    Args:
+        json_example (dict): JSON object containing the data.
+        embedding_model: Model used to generate embeddings for strings.
+        sequence_length (int): Length of the sequence.
+        label (int): Label for the sequences.
+
+    Returns:
+        list: List of dictionaries containing tensors for the sequences and labels.
+    """
     sequences = []
     for macro_category in json_example.keys():
         for level_one_action in json_example[macro_category].keys():
@@ -85,6 +149,17 @@ def generateSequencesFromJson(json_example, embedding_model, sequence_length, la
 
 
 def generateMatrixFromJson(json_example, embedding_model, top_tf_idf_strings):
+    """
+    Generates a matrix from a JSON example using top TF-IDF strings.
+
+    Args:
+        json_example (dict): JSON object containing the data.
+        embedding_model: Model used to generate embeddings for strings.
+        top_tf_idf_strings (list): List of top TF-IDF strings.
+
+    Returns:
+        list or None: Matrix of embeddings or None if no strings are found.
+    """
     matrix = []
     strings_found = 0
     for tf_idf_string in top_tf_idf_strings:
@@ -109,6 +184,18 @@ def generateMatrixFromJson(json_example, embedding_model, top_tf_idf_strings):
 
 
 def generate_examples_confidences_csv(predicted_labels, real_labels, confidences, path):
+    """
+    Generates a CSV file with example predictions and their confidences.
+
+    Args:
+        predicted_labels (list): List of predicted labels.
+        real_labels (list): List of real labels.
+        confidences (list): List of confidence scores.
+        path (str): Path to save the CSV file.
+
+    Returns:
+        None
+    """
     print("Writing test results in " + path)
     sheet_name = "Test results"
     with pd.ExcelWriter(path) as writer:
@@ -124,6 +211,17 @@ def generate_examples_confidences_csv(predicted_labels, real_labels, confidences
 
 
 def generate_example_prediction_info_xlsx(example_predictions_info, top_n_subgraph, path):
+    """
+    Generates an Excel file with detailed prediction information for examples.
+
+    Args:
+        example_predictions_info (list): List of prediction information for examples.
+        top_n_subgraph (int): Number of top subgraphs to include.
+        path (str): Path to save the Excel file.
+
+    Returns:
+        None
+    """
     print("Writing malware prediction info results in " + path)
     columns = ["Example_ID"]
     for i in range(top_n_subgraph):
@@ -140,6 +238,16 @@ def generate_example_prediction_info_xlsx(example_predictions_info, top_n_subgra
 
 
 def convertTimeDelta(before, after):
+    """
+    Converts a time delta into a formatted string.
+
+    Args:
+        before (datetime): Start time.
+        after (datetime): End time.
+
+    Returns:
+        str: Formatted time delta string.
+    """
     tot = after - before
     d = np.timedelta64(tot, 'D')
     tot -= d
@@ -155,6 +263,15 @@ def convertTimeDelta(before, after):
 
 
 def build_result_filename(configuration):
+    """
+    Builds a result filename based on the configuration.
+
+    Args:
+        configuration (dict): Configuration dictionary.
+
+    Returns:
+        str: Generated result filename.
+    """
     filename = "results/result"
     for pipeline in [conf for conf in configuration.keys() if "_pipeline" in conf]:
         if configuration[pipeline] == '1':
@@ -163,13 +280,29 @@ def build_result_filename(configuration):
 
 
 def open_result_file(path):
-    """Open the file in append mode and store it in the global variable."""
+    """
+    Opens a result file in append mode and stores it in a global variable.
+
+    Args:
+        path (str): Path to the result file.
+
+    Returns:
+        None
+    """
     global result_file
     result_file = open(path, "w")
 
 
 def write_to_result_file(string):
-    """Write data to the already-open file."""
+    """
+    Writes a string to the already-open result file.
+
+    Args:
+        string (str): String to write.
+
+    Returns:
+        None
+    """
     if result_file is not None:
         result_file.write(string + "\n")
     else:
@@ -177,7 +310,12 @@ def write_to_result_file(string):
 
 
 def close_result_file():
-    """Close the global file if it's open."""
+    """
+    Closes the global result file if it's open.
+
+    Returns:
+        None
+    """
     global result_file
     if result_file is not None:
         result_file.close()
@@ -185,8 +323,18 @@ def close_result_file():
 
 
 def get_node_explanation_heatmap(element, min_node_importance, max_node_importance):
+    """
+    Computes the heatmap value for a node explanation.
+
+    Args:
+        element (dict): Node element.
+        min_node_importance (float): Minimum node importance value.
+        max_node_importance (float): Maximum node importance value.
+
+    Returns:
+        float: Heatmap value for the node.
+    """
     if 'start' in element:
-        # edge case
         return 0
     else:
         if 'properties' in element and 'node_importance_value' in element['properties'] and (
@@ -197,14 +345,23 @@ def get_node_explanation_heatmap(element, min_node_importance, max_node_importan
 
 
 def custom_graph_element_color_mapping(element, min_importance, max_importance):
+    """
+    Maps a graph element to a color based on its importance.
+
+    Args:
+        element (dict): Graph element.
+        min_importance (float): Minimum importance value.
+        max_importance (float): Maximum importance value.
+
+    Returns:
+        str: RGB color string.
+    """
     if 'start' in element and 'edge_importance_value' in element['properties'] and (
             max_importance - min_importance) != 0:
-        # edge case
         normed_value = (element['properties']['edge_importance_value'] - min_importance) / (
                 max_importance - min_importance)
     elif 'properties' in element and 'node_importance_value' in element['properties'] and (
             max_importance - min_importance) != 0:
-        # node case
         normed_value = (element['properties']['node_importance_value'] - min_importance) / (
                 max_importance - min_importance)
     else:
@@ -215,8 +372,27 @@ def custom_graph_element_color_mapping(element, min_importance, max_importance):
 
 
 def get_tensor_min_max(tensor):
+    """
+    Gets the minimum and maximum values of a tensor.
+
+    Args:
+        tensor (torch.Tensor): Input tensor.
+
+    Returns:
+        tuple: Minimum and maximum values of the tensor.
+    """
     return tensor.min().item(), tensor.max().item()
 
 
 def count_lists_intersection(list1, list2):
+    """
+    Counts the number of common elements between two lists.
+
+    Args:
+        list1 (list): First list.
+        list2 (list): Second list.
+
+    Returns:
+        int: Number of common elements.
+    """
     return sum(1 for item in list1 if item in list2)

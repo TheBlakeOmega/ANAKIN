@@ -11,11 +11,31 @@ from utils import custom_tokenizer, write_to_result_file
 
 
 class JsonDataset:
+    """
+    A class to handle operations on a dataset of JSON files, including filtering, 
+    TF-IDF computation, and sequence extraction.
+    """
 
     def __init__(self, path):
+        """
+        Initializes the JsonDataset object.
+
+        Args:
+            path (str): Path to the dataset directory.
+        """
         self.path = path
 
     def filterDatasetByTFIDF(self, relevant_string_list, save_path):
+        """
+        Filters the dataset by keeping only the strings present in the relevant string list.
+
+        Args:
+            relevant_string_list (list): List of strings to retain in the dataset.
+            save_path (str): Path to save the filtered dataset.
+
+        Returns:
+            None
+        """
         json_path_list = self.get_json_path_list(label='Benign') + self.get_json_path_list(label='Malicious')
         print('Number of examples to compute: ' + str(len(json_path_list)))
         write_to_result_file('Number of examples to compute: ' + str(len(json_path_list)))
@@ -50,6 +70,16 @@ class JsonDataset:
                 write_to_result_file(str(i) + ' examples computed')
 
     def filterDatasetByPackages(self, package_list, save_path):
+        """
+        Filters the dataset by keeping only the strings that contain specific packages.
+
+        Args:
+            package_list (list): List of package names to retain in the dataset.
+            save_path (str): Path to save the filtered dataset.
+
+        Returns:
+            None
+        """
         json_path_list = self.get_json_path_list(label='Benign') + self.get_json_path_list(label='Malicious')
         print('Number of examples to compute: ' + str(len(json_path_list)))
         write_to_result_file('Number of examples to compute: ' + str(len(json_path_list)))
@@ -58,7 +88,6 @@ class JsonDataset:
             os.makedirs(save_path + '/Benign')
             os.makedirs(save_path + '/Malicious')
         for json_path in json_path_list:
-
             try:
                 with open(json_path) as f:
                     json_example = json.load(f)
@@ -88,6 +117,16 @@ class JsonDataset:
                 write_to_result_file(str(i) + ' examples computed')
 
     def compute_tf_idf(self, top_n=100, save_path=None):
+        """
+        Computes the TF-IDF scores for the dataset and retrieves the top N words.
+
+        Args:
+            top_n (int, optional): Number of top words to retrieve. Defaults to 100.
+            save_path (str, optional): Path to save the top words. Defaults to None.
+
+        Returns:
+            list: List of top N words based on TF-IDF scores.
+        """
         try:
             document_list = self.extract_sequences()
 
@@ -117,16 +156,22 @@ class JsonDataset:
             return df_sorted.head(top_n)['Word'].to_list()
 
         except EOFError:
-            print("Il file è vuoto o danneggiato.")
-            write_to_result_file("Il file è vuoto o danneggiato.")
+            print("The file is empty or corrupted.")
+            write_to_result_file("The file is empty or corrupted.")
         except pickle.PickleError:
-            print("Errore durante il caricamento del file.")
-            write_to_result_file("Errore durante il caricamento del file.")
+            print("Error while loading the file.")
+            write_to_result_file("Error while loading the file.")
         except FileNotFoundError:
-            print("Il file non è stato trovato.")
-            write_to_result_file("Il file non è stato trovato.")
+            print("The file was not found.")
+            write_to_result_file("The file was not found.")
 
     def extract_sequences(self):
+        """
+        Extracts sequences from the JSON dataset.
+
+        Returns:
+            list: List of sequences extracted from the dataset.
+        """
         json_path_list = self.get_json_path_list(label='Benign') + self.get_json_path_list(label='Malicious')
         print('Extracting sequences from ' + str(len(json_path_list)) + ' files')
         write_to_result_file('Extracting sequences from ' + str(len(json_path_list)) + ' files')
@@ -150,6 +195,12 @@ class JsonDataset:
         return sequence_list
 
     def delete_files_with_empty_properties(self):
+        """
+        Deletes JSON files with empty properties from the dataset.
+
+        Returns:
+            None
+        """
         json_path_list = self.get_json_path_list(label='Benign') + self.get_json_path_list(label='Malicious')
         print('Number of examples to compute: ' + str(len(json_path_list)))
         write_to_result_file('Number of examples to compute: ' + str(len(json_path_list)))
@@ -167,5 +218,14 @@ class JsonDataset:
                 write_to_result_file(str(i) + ' examples computed')
 
     def get_json_path_list(self, label="Benign"):
+        """
+        Retrieves the list of JSON file paths for a given label.
+
+        Args:
+            label (str, optional): Label of the dataset (e.g., "Benign" or "Malicious"). Defaults to "Benign".
+
+        Returns:
+            list: List of JSON file paths.
+        """
         ds_path_ben = self.path + "/" + label
         return [join(ds_path_ben, f) for f in listdir(ds_path_ben) if isfile(join(ds_path_ben, f))]

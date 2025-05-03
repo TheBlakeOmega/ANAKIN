@@ -20,22 +20,56 @@ best_model = None
 
 
 class GraphNetwork:
+    """
+    A class to manage the training, evaluation, and optimization of a graph neural network.
+    """
 
     def __init__(self):
+        """
+        Initializes the GraphNetwork object.
+        """
         self.model = None
 
     def setModelMode(self, mode):
+        """
+        Sets the mode of the model (train or eval).
+
+        Args:
+            mode (str): Mode to set ('train' or 'eval').
+
+        Returns:
+            None
+        """
         if mode == 'train':
             self.model.train()
         elif mode == 'eval':
             self.model.eval()
 
     def setModelLocation(self, device):
+        """
+        Moves the model to the specified device.
+
+        Args:
+            device (torch.device): Device to move the model to.
+
+        Returns:
+            None
+        """
         self.model.to(device)
 
-    def train(self, train_data_loader, validation_data_loader, params,
-              save_path=None):
+    def train(self, train_data_loader, validation_data_loader, params, save_path=None):
+        """
+        Trains the graph neural network.
 
+        Args:
+            train_data_loader (DataLoader): DataLoader for training data.
+            validation_data_loader (DataLoader): DataLoader for validation data.
+            params (dict): Dictionary of training parameters.
+            save_path (str, optional): Path to save the trained model. Defaults to None.
+
+        Returns:
+            dict: Dictionary containing training and validation metrics.
+        """
         epochs = params['epochs']
         learning_rate = params['learning_rate']
         early_stopping_thresh = params['earlyStoppingThresh']
@@ -50,6 +84,7 @@ class GraphNetwork:
         best_train_loss = 0
         best_train_acc = 0
         worst_loss_times = 0
+
         for epoch in range(epochs):
             print('Training epoch ' + str(epoch) + ':')
             # Train on batches
@@ -58,6 +93,7 @@ class GraphNetwork:
             val_acc = 0
             total_loss = 0
             self.model.train()
+
             for batch in train_data_loader:
                 batch.to(device)
                 optimizer.zero_grad()
@@ -114,7 +150,7 @@ class GraphNetwork:
             if worst_loss_times == early_stopping_thresh:
                 break
 
-            # reload best model's weights
+        # reload best model's weights
         self.model.load_state_dict(torch.load('tmp/temp_best_model_state_dict.pt', map_location=torch.device(device)))
 
         if save_path is not None:
@@ -136,6 +172,17 @@ class GraphNetwork:
         return scores
 
     def predict_example(self, test_dataloader, device, prediction_type='soft'):
+        """
+        Predicts the label for a single example using the graph neural network.
+
+        Args:
+            test_dataloader (DataLoader): DataLoader containing the test example.
+            device (torch.device): Device to perform the prediction on.
+            prediction_type (str, optional): Type of prediction ('soft' or 'hard'). Defaults to 'soft'.
+
+        Returns:
+            tuple: Predicted label, real label, and confidence score.
+        """
         predictions_on_sub_graphs = []
         with torch.no_grad():
             for batch in test_dataloader:
@@ -163,6 +210,20 @@ class GraphNetwork:
 
     def predict_example_with_top_n_subgraph_infos(self, test_dataloader, graph_dataset, top_n, example_index,
                                                   subgraphs_indexes, device):
+        """
+        Predicts the label for a single example and retrieves information about the top N subgraphs.
+
+        Args:
+            test_dataloader (DataLoader): DataLoader containing the test example.
+            graph_dataset (GraphDataset): Dataset containing the graph data.
+            top_n (int): Number of top subgraphs to retrieve information for.
+            example_index (int): Index of the example being predicted.
+            subgraphs_indexes (list): List of subgraph indices.
+            device (torch.device): Device to perform the prediction on.
+
+        Returns:
+            example_info: Information about the example and its top N subgraphs.
+        """
         predictions_on_sub_graphs = []
         with torch.no_grad():
             for batch in test_dataloader:
@@ -191,13 +252,23 @@ class GraphNetwork:
 
     def optimizeParameters(self, params):
         """
-        Optimize train's parameters in params
-        :param params:
-        parameters used during train that will be optimized
-        :return:
-        A dictionary containing the loss of last train
-        """
+        Optimizes the hyperparameters of the graph neural network.
 
+        Args:
+            params (dict): Dictionary containing the parameters for optimization, including:
+                - dataset (GraphDataset): Dataset object for training and validation.
+                - batch_size (int): Batch size for training and validation.
+                - learning_rate (float): Learning rate for the optimizer.
+                - hidden_dim (int): Dimension of the hidden layers.
+                - dropout (float): Dropout rate.
+                - n_layers (int): Number of linear layers.
+                - n_convs (int): Number of convolutional layers.
+                - save_model_path (str, optional): Path to save the best model. Defaults to None.
+                - save_results_path (str): Path to save the optimization results.
+
+        Returns:
+            dict: Dictionary containing the validation loss and optimization status.
+        """
         global SavedParameters
         global best_loss
 
@@ -245,11 +316,14 @@ class GraphNetwork:
 
     def loadModel(self, load_path, device):
         """
-        Loads a model from storage
-        :param load_path:
-        path from which load the model
-        :param device:
-        device in which model will be used
+        Loads a pre-trained graph neural network model from a specified path.
+
+        Args:
+            load_path (str): Path to the file containing the saved model.
+            device (torch.device): Device to load the model onto.
+
+        Returns:
+            None
         """
         with open(load_path, 'rb') as file:
             self.model = pickle.load(file)

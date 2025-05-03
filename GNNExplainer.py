@@ -8,8 +8,21 @@ from utils import custom_graph_element_color_mapping, get_tensor_min_max, write_
 
 
 class GraphNetworkExplainer:
+    """
+    A class to explain the predictions of a graph neural network using GNNExplainer.
+    """
 
     def __init__(self, model_to_explain, node_names_path):
+        """
+        Initializes the GraphNetworkExplainer object.
+
+        Args:
+            model_to_explain (GraphNetwork): The graph neural network to explain.
+            node_names_path (str): Path to the file containing node names.
+
+        Returns:
+            None
+        """
         model_to_explain.setModelMode('eval')
         with open(node_names_path, 'rb') as file:
             print("Loading nodes' names from " + node_names_path)
@@ -43,6 +56,15 @@ class GraphNetworkExplainer:
         self._build_node_indexes_dict(node_names)
 
     def train_explainer(self, save_path):
+        """
+        Trains the explainer model and saves it to a specified path.
+
+        Args:
+            save_path (str): Path to save the trained explainer model.
+
+        Returns:
+            None
+        """
         print("Training explainer model")
         self.explainer_model = Explainer(
             model=self.model_to_explain,
@@ -63,6 +85,17 @@ class GraphNetworkExplainer:
             file.close()
 
     def load_explainer(self, explainer_load_path, node_importance_save_path=None, edge_importance_save_path=None):
+        """
+        Loads the explainer model and optionally node and edge importance dictionaries.
+
+        Args:
+            explainer_load_path (str): Path to the explainer model file.
+            node_importance_save_path (str, optional): Path to the node importance dictionary. Defaults to None.
+            edge_importance_save_path (str, optional): Path to the edge importance dictionary. Defaults to None.
+
+        Returns:
+            None
+        """
         with open(explainer_load_path, 'rb') as file:
             print("Loading explainer model from pickle object")
             self.explainer_model = pickle.load(file)
@@ -83,6 +116,19 @@ class GraphNetworkExplainer:
 
     def explain_graphs(self, test_graph_dataset, device, xlsx_save_path, node_importance_save_path,
                        edge_importance_save_path):
+        """
+        Explains the graphs in the test dataset and saves the results.
+
+        Args:
+            test_graph_dataset (Dataset): Dataset containing the test graphs.
+            device (torch.device): Device to perform the explanation on.
+            xlsx_save_path (str): Path to save the results in an Excel file.
+            node_importance_save_path (str): Path to save the node importance dictionary.
+            edge_importance_save_path (str): Path to save the edge importance dictionary.
+
+        Returns:
+            None
+        """
         print('Number of examples to compute: ' + str(len(test_graph_dataset)))
         example_index = 0
         for graph in test_graph_dataset:
@@ -97,10 +143,29 @@ class GraphNetworkExplainer:
         self._save_output_importances_in_xlsx(xlsx_save_path)
 
     def _build_node_indexes_dict(self, node_names):
+        """
+        Builds a dictionary mapping node names to their indexes.
+
+        Args:
+            node_names (list): List of node names.
+
+        Returns:
+            None
+        """
         for idx, node_name in enumerate(node_names):
             self.node_indexes_dict[node_name] = idx
 
     def _compute_graph_importances(self, graph, device):
+        """
+        Computes the importance of nodes and edges for a given graph.
+
+        Args:
+            graph (Data): Graph to compute importances for.
+            device (torch.device): Device to perform the computation on.
+
+        Returns:
+            None
+        """
         graph.to(device)
         with torch.no_grad():
             out = self.model_to_explain(graph.x, graph.edge_index, edge_weight=graph.edge_attr)
@@ -131,6 +196,12 @@ class GraphNetworkExplainer:
             self.edge_importance_dict["real_label"][real_label][row][column].append(edge_importance.item())
 
     def _compute_importances_means(self):
+        """
+        Computes the mean importance values for nodes and edges.
+
+        Returns:
+            None
+        """
         print("Calculating node importances' means")
         for label_type in self.node_importance_dict.keys():
             for label in self.node_importance_dict[label_type].keys():
@@ -149,10 +220,20 @@ class GraphNetworkExplainer:
         self.edge_importance_dict["node_indexes_dict"] = self.node_indexes_dict
 
     def _save_output_importances_in_pickle(self, node_importance_save_path, edge_importance_save_path):
+        """
+        Saves the node and edge importance dictionaries to pickle files.
+
+        Args:
+            node_importance_save_path (str): Path to save the node importance dictionary.
+            edge_importance_save_path (str): Path to save the edge importance dictionary.
+
+        Returns:
+            None
+        """
         with open(node_importance_save_path, 'wb') as file:
             print("Saving nodes' importance in pickle object")
             pickle.dump(self.node_importance_dict, file)
-            print("nodes' importance saved")
+            print("Nodes' importance saved")
             file.close()
         with open(edge_importance_save_path, 'wb') as file:
             print("Saving edges' importance in pickle object")
@@ -161,6 +242,15 @@ class GraphNetworkExplainer:
             file.close()
 
     def _save_output_importances_in_xlsx(self, xlsx_save_path):
+        """
+        Saves the node and edge importance dictionaries to an Excel file.
+
+        Args:
+            xlsx_save_path (str): Path to save the Excel file.
+
+        Returns:
+            None
+        """
         print("Writing results in " + xlsx_save_path)
         label_types = ["classification", "real_label"]
         node_importance_sheet_name = "Nodes importance"
@@ -183,6 +273,16 @@ class GraphNetworkExplainer:
                     start_col += len(df.columns) + 2
 
     def build_visualization_graph(self, graph, device):
+        """
+        Builds a visualization graph for a given graph.
+
+        Args:
+            graph (Data): Graph to visualize.
+            device (torch.device): Device to perform the explanation on.
+
+        Returns:
+            GraphWidget: Visualization widget for the graph.
+        """
         graph.to(device)
         explanation = self.explainer_model(graph.x, graph.edge_index, edge_weight=graph.edge_attr)
         node_mask_with_mean = explanation['node_mask'].mean(dim=1)
@@ -250,6 +350,16 @@ class GraphNetworkExplainer:
         self._print_suggested_graphs_to_display(10, malicious_counter_dict)
 
     def _get_top_n_node_names(self, top_n, label):
+        """
+        Retrieves the top N node names based on importance for a given label.
+
+        Args:
+            top_n (int): Number of top nodes to retrieve.
+            label (int): Label (0 for benign, 1 for malicious).
+
+        Returns:
+            list: List of top N node names.
+        """
         df = pd.DataFrame({
             "Node's string": self.node_importance_dict['classification'][label].keys(),
             'Importance (mean)': self.node_importance_dict['classification'][label].values()
@@ -258,6 +368,16 @@ class GraphNetworkExplainer:
         return df.head(top_n)["Node's string"].tolist()
 
     def _print_suggested_graphs_to_display(self, top_to_display, counter_dict):
+        """
+        Prints and logs the suggested graphs to display based on relevant nodes.
+
+        Args:
+            top_to_display (int): Number of top graphs to display.
+            counter_dict (dict): Dictionary mapping graph paths to the count of relevant nodes.
+
+        Returns:
+            None
+        """
         df = pd.DataFrame({
             "graph path": counter_dict.keys(),
             'relevant nodes': counter_dict.values()
