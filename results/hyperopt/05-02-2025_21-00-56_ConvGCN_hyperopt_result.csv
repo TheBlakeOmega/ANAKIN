@@ -1,0 +1,3 @@
+train_loss,train_accuracy,validation_loss,validation_accuracy,epochs,learning_rate,train_time,batch_size,hidden_dim,dropout,n_layers,n_convs
+0.6951,0.4736,0.6905,0.4667,2,0.0008356376188102163,261413316 microseconds,64,32,0.1357404670646304,1,3
+0.7033,0.4344,0.6913,0.45,2,0.0034511647412123732,272488719 microseconds,512,128,0.4083836948879047,2,1
