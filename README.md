@@ -87,4 +87,4 @@ To generate an explanation of the model trained run:
 * _explain_gnn_model_pipeline_ to generate a global explanation among the whole dataset
 * _isolate_graphs_to_explain_pipeline_ to identify best examples to use as explanation, according results obtaind in the file specified by _TestConfidenceResultsFileName_ configuration
 * _generate_graphs_to_explain_pipeline_ to generate files which includes graph objectss, instances of GraphWidget class from yfiles_jupyter_graphs library
-* the notebook present in the repository, specifying paths of files generated in above pipeline inside _
+* the notebook present in the repository, specifying, at line , the path of the directory in which the above pipeline stored the explanation graphs.
