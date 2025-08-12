@@ -1,4 +1,4 @@
-# ANAKIN
+#  grAph NeurAl networK for androId malware detectioN (ANAKIN)
 
 The repository contains code referred to the work:
 (insert paper information)
