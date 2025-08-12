@@ -76,4 +76,15 @@ The dataset must follow this step to train the model:
 * train word2Vec model on train dataset running _train_word2vec_model_pipeline_
 * generate graph dataset starting from preprocesssed json files running _create_graph_dataset_pipeline_
 
-## Train models
+## Train model
+After Dataset preprocessing, run _optimize_gnn_model_pipeline_ to train the model using hyperopt optimization.
+
+## Test model
+To test the model trained run _test_gnn_model_pipeline_ 
+
+## Explain model
+To generate an explanation of the model trained run:
+* _explain_gnn_model_pipeline_ to generate a global explanation among the whole dataset
+* _isolate_graphs_to_explain_pipeline_ to identify best examples to use as explanation, according results obtaind in the file specified by _TestConfidenceResultsFileName_ configuration
+* _generate_graphs_to_explain_pipeline_ to generate files which includes graph objectss, instances of GraphWidget class from yfiles_jupyter_graphs library
+* the notebook present in the repository, specifying paths of files generated in above pipeline inside _
