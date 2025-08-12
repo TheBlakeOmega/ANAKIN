@@ -1,0 +1,718 @@
+{
+    "activity": {
+        "Lcom/jsm/publicdomainbible/activity/MainActivity;->onNavigationItemSelected": [
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/MainActivity;->a": [
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/SharedPreferences;->edit",
+            "Landroid/content/Context;->getSharedPreferences"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/MainActivity$1;->onClick": [
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/TypedArray;->hasValue",
+            "Landroid/content/Context;->obtainStyledAttributes",
+            "Landroid/content/res/TypedArray;->recycle"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/MainActivity;->onResume": [
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->edit",
+            "Landroid/content/Context;->getSharedPreferences"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/MainActivity$2;->run": [
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/SharedPreferences;->edit",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources$Theme;->resolveAttribute",
+            "Landroid/content/Context;->getTheme",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/app/Dialog;-><init>",
+            "Landroid/content/Context;->obtainStyledAttributes",
+            "Landroid/content/res/TypedArray;->getResourceId",
+            "Landroid/content/res/TypedArray;->recycle"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/MainActivity;->onRequestPermissionsResult": [
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/MainActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/MainActivity;->onDestroy": [
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getResourceName",
+            "Landroid/content/Context;->getResources",
+            "Landroid/app/Activity;->getWindow",
+            "Landroid/content/Context;->getCacheDir"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/MainActivity;->onCreate": [
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->edit",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/res/Resources;->getDisplayMetrics",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/Context;->getContentResolver",
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/res/Resources;->getResourceName",
+            "Landroid/app/Activity;->getWindow",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks",
+            "Landroid/content/Context;->getTheme",
+            "Landroid/content/res/TypedArray;->recycle"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/BookActivity$1;->onClick": [
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/TypedArray;->hasValue",
+            "Landroid/content/Context;->obtainStyledAttributes",
+            "Landroid/content/res/TypedArray;->recycle"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/BookActivity;->a": [
+            "Landroid/app/Activity;->startActivity",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->putExtra"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/BookActivity$a;->doInBackground": [
+            "Landroid/content/Context;->getFilesDir"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/BookActivity;->onCreate": [
+            "Landroid/content/res/Resources;->getDisplayMetrics",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getContentResolver",
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/res/Resources;->getResourceName",
+            "Landroid/app/Activity;->getWindow"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/BookActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity;->onOptionsItemSelected": [
+            "Landroid/app/Dialog;-><init>",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources$Theme;->resolveAttribute",
+            "Landroid/content/Context;->getTheme",
+            "Landroid/content/Context;->obtainStyledAttributes",
+            "Landroid/content/res/TypedArray;->getResourceId",
+            "Landroid/content/res/TypedArray;->recycle",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->edit",
+            "Landroid/content/Context;->getSharedPreferences"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$c;->onPostExecute": [
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/Resources;->getDrawable",
+            "Landroid/content/Context;->getDrawable",
+            "Landroid/content/res/Resources;->getValue",
+            "Landroid/content/Context;->getTheme",
+            "Landroid/content/res/Resources;->getXml",
+            "Landroid/content/Context;->obtainStyledAttributes",
+            "Landroid/content/res/TypedArray;->recycle",
+            "Landroid/content/res/ColorStateList;->getDefaultColor",
+            "Landroid/content/res/Resources$Theme;->resolveAttribute",
+            "Landroid/content/res/ColorStateList;->getColorForState"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$7;->onClick": [
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/ContentValues;->put"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$13;->onClick": [
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/app/Dialog;-><init>",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources$Theme;->resolveAttribute",
+            "Landroid/content/Context;->getTheme",
+            "Landroid/content/Context;->obtainStyledAttributes",
+            "Landroid/content/res/TypedArray;->getResourceId",
+            "Landroid/content/res/TypedArray;->recycle",
+            "Landroid/app/Dialog;->show"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$3;->onClick": [
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/ContentValues;->put"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$b;->onClick": [
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$5;->onClick": [
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/ContentValues;->put"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$c;->doInBackground": [
+            "Landroid/content/Context;->getFilesDir"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity;->onCreate": [
+            "Landroid/content/res/Resources;->getDisplayMetrics",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getContentResolver",
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/res/Resources;->getResourceName",
+            "Landroid/app/Activity;->getWindow",
+            "Landroid/content/Intent;->getIntExtra"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$18;->onClick": [
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$10;->onProgressChanged": [
+            "Landroid/content/SharedPreferences$Editor;->putInt",
+            "Landroid/content/SharedPreferences$Editor;->commit",
+            "Landroid/content/SharedPreferences;->edit",
+            "Landroid/content/Context;->getSharedPreferences"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity;->onResume": [
+            "Landroid/content/res/Resources;->getConfiguration"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity;->onDestroy": [
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getResourceName",
+            "Landroid/content/Context;->getResources",
+            "Landroid/app/Activity;->getWindow",
+            "Landroid/content/SharedPreferences$Editor;->putInt",
+            "Landroid/content/SharedPreferences$Editor;->commit",
+            "Landroid/content/SharedPreferences;->edit",
+            "Landroid/content/Context;->getSharedPreferences"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$9;->onClick": [
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/ContentValues;->put"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$a;->onClick": [
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$12;->onClick": [
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/app/Dialog;-><init>",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources$Theme;->resolveAttribute",
+            "Landroid/content/Context;->getTheme",
+            "Landroid/content/Context;->obtainStyledAttributes",
+            "Landroid/content/res/TypedArray;->getResourceId",
+            "Landroid/content/res/TypedArray;->recycle",
+            "Landroid/app/Dialog;->show"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$14;->onClick": [
+            "Landroid/app/Dialog;-><init>",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources$Theme;->resolveAttribute",
+            "Landroid/content/Context;->getTheme",
+            "Landroid/content/Context;->obtainStyledAttributes",
+            "Landroid/content/res/TypedArray;->getResourceId",
+            "Landroid/content/res/TypedArray;->recycle",
+            "Landroid/app/Dialog;->show",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$1;->onScrollStateChanged": [
+            "Landroid/content/SharedPreferences$Editor;->putInt",
+            "Landroid/content/SharedPreferences$Editor;->commit",
+            "Landroid/content/SharedPreferences;->edit",
+            "Landroid/content/Context;->getSharedPreferences"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$16;->onClick": [
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity;->b": [
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VerseActivity$11;->onClick": [
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/res/Resources;->getConfiguration"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/ChapterActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/ChapterActivity;->onCreate": [
+            "Landroid/content/res/Resources;->getDisplayMetrics",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getContentResolver",
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/res/Resources;->getResourceName",
+            "Landroid/app/Activity;->getWindow",
+            "Landroid/content/Context;->getFilesDir"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/FavoriteActivity;->onCreate": [
+            "Landroid/content/res/Resources;->getDisplayMetrics",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getContentResolver",
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/res/Resources;->getResourceName",
+            "Landroid/app/Activity;->getWindow",
+            "Landroid/content/Intent;->getIntExtra"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/FavoriteActivity$a;->onPreExecute": [
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/FavoriteActivity;->a": [
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->putExtra"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/FavoriteActivity$a;->onPostExecute": [
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/FavoriteActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/FavoriteActivity$a;->doInBackground": [
+            "Landroid/content/Context;->getFilesDir"
+        ],
+        "Lcom/jsm/publicdomainbible/util/CompartilharFull;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/jsm/publicdomainbible/util/CompartilharFull;->onCreate": [
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getResourceName",
+            "Landroid/content/Context;->getResources",
+            "Landroid/app/Activity;->getWindow",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/content/Intent;->getStringExtra"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VersesActivity;->onCreate": [
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getResourceName",
+            "Landroid/content/Context;->getResources",
+            "Landroid/app/Activity;->getWindow"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/VersesActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/SearchActivity;->onCreate": [
+            "Landroid/content/res/Resources;->getDisplayMetrics",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getContentResolver",
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/res/Resources;->getResourceName",
+            "Landroid/app/Activity;->getWindow",
+            "Landroid/content/Intent;->getIntExtra"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/SearchActivity$a;->onPreExecute": [
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/SearchActivity$a;->doInBackground": [
+            "Landroid/content/Context;->getFilesDir"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/SearchActivity;->a": [
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->putExtra"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/SearchActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/SearchActivity$a;->onPostExecute": [
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/StartActivity;->onCreate": [
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getResourceName",
+            "Landroid/content/Context;->getResources",
+            "Landroid/app/Activity;->getWindow",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->edit",
+            "Landroid/content/Context;->getSharedPreferences"
+        ],
+        "Lcom/jsm/publicdomainbible/activity/StartActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/google/android/gms/common/api/GoogleApiActivity;->onActivityResult": [
+            "Landroid/content/Intent;->getBooleanExtra",
+            "Landroid/content/Intent;->getIntExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/Context;->getPackageName"
+        ],
+        "Lcom/google/android/gms/common/api/GoogleApiActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/Intent;->getExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getResources",
+            "Landroid/app/AlertDialog$Builder;-><init>",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/app/AlertDialog$Builder;-><init>",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/res/Resources;->getResourceEntryName",
+            "Landroid/content/res/Resources$Theme;->resolveAttribute",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getTheme"
+        ],
+        "Lcom/google/android/gms/common/api/GoogleApiActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/google/android/gms/common/api/GoogleApiActivity;->onSaveInstanceState": [
+            "Landroid/app/Activity;->onSaveInstanceState"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;->onResume": [
+            "Landroid/app/Activity;->onResume"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;->onSaveInstanceState": [
+            "Landroid/app/Activity;->onSaveInstanceState"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;->onDestroy": [
+            "Landroid/app/Activity;->onDestroy"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/Intent;->getBooleanExtra",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;->onPause": [
+            "Landroid/app/Activity;->onPause"
+        ],
+        "Lcom/google/android/gms/ads/purchase/InAppPurchaseActivity;->onDestroy": [
+            "Landroid/app/Activity;->onDestroy"
+        ],
+        "Lcom/google/android/gms/ads/purchase/InAppPurchaseActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/Intent;->getBooleanExtra",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/google/android/gms/ads/purchase/InAppPurchaseActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ]
+    },
+    "receiver": {
+        "Lcom/google/android/gms/analytics/AnalyticsReceiver;-><init>": [
+            "Landroid/content/BroadcastReceiver;-><init>"
+        ],
+        "Lcom/google/android/gms/analytics/AnalyticsReceiver;->onReceive": [
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Intent;->getIntExtra",
+            "Landroid/content/Context;->registerReceiver",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->startService",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->getAction",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>"
+        ],
+        "Lcom/google/android/gms/measurement/AppMeasurementReceiver;->onReceive": [
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Intent;->getIntExtra",
+            "Landroid/content/Context;->registerReceiver",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->startService",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks",
+            "Landroid/content/Intent;->getAction"
+        ],
+        "Lcom/google/android/gms/measurement/AppMeasurementReceiver;-><init>": [
+            "Landroid/content/BroadcastReceiver;-><init>"
+        ],
+        "Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;->onReceive": [
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->startService",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Intent;->getAction",
+            "Landroid/content/Intent;->getStringExtra"
+        ],
+        "Lcom/google/firebase/iid/FirebaseInstanceIdReceiver;-><init>": [
+            "Landroid/content/BroadcastReceiver;-><init>"
+        ],
+        "Lcom/google/firebase/iid/FirebaseInstanceIdInternalReceiver;->onReceive": [
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->startService",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Intent;->getAction"
+        ],
+        "Lcom/google/firebase/iid/FirebaseInstanceIdInternalReceiver;-><init>": [
+            "Landroid/content/BroadcastReceiver;-><init>"
+        ]
+    },
+    "service": {
+        "Lcom/google/android/gms/analytics/AnalyticsService;-><init>": [
+            "Landroid/app/Service;-><init>"
+        ],
+        "Lcom/google/android/gms/analytics/AnalyticsService;->onDestroy": [
+            "Landroid/app/Service;->onDestroy",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getSystemService"
+        ],
+        "Lcom/google/android/gms/analytics/AnalyticsService;->onStartCommand": [
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Intent;->getIntExtra",
+            "Landroid/content/Context;->registerReceiver",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->startService",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Intent;->getAction",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>"
+        ],
+        "Lcom/google/android/gms/analytics/AnalyticsService;->onCreate": [
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getSystemService"
+        ],
+        "Lcom/google/android/gms/measurement/AppMeasurementService;-><init>": [
+            "Landroid/app/Service;-><init>"
+        ],
+        "Lcom/google/android/gms/measurement/AppMeasurementService;->onCreate": [
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks"
+        ],
+        "Lcom/google/android/gms/measurement/AppMeasurementService;->onUnbind": [
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks",
+            "Landroid/content/Intent;->getAction"
+        ],
+        "Lcom/google/android/gms/measurement/AppMeasurementService;->onDestroy": [
+            "Landroid/app/Service;->onDestroy",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks"
+        ],
+        "Lcom/google/android/gms/measurement/AppMeasurementService;->onBind": [
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks",
+            "Landroid/content/Intent;->getAction"
+        ],
+        "Lcom/google/android/gms/measurement/AppMeasurementService;->onStartCommand": [
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Intent;->getIntExtra",
+            "Landroid/content/Context;->registerReceiver",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->startService",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks",
+            "Landroid/content/Intent;->getAction"
+        ],
+        "Lcom/google/android/gms/measurement/AppMeasurementService;->onRebind": [
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/BroadcastReceiver;-><init>",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks",
+            "Landroid/content/Intent;->getAction"
+        ],
+        "Lcom/google/firebase/iid/FirebaseInstanceIdService;->c": [
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/net/ConnectivityManager;->getActiveNetworkInfo"
+        ],
+        "Lcom/google/firebase/iid/FirebaseInstanceIdService;->a": [
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->putExtras"
+        ],
+        "Lcom/google/firebase/iid/FirebaseInstanceIdService$1;->onReceive": [
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/net/ConnectivityManager;->getActiveNetworkInfo",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->putExtra"
+        ],
+        "Lcom/google/firebase/iid/FirebaseInstanceIdService;-><init>": [
+            "Landroid/app/Service;-><init>"
+        ]
+    },
+    "provider": {
+        "Lcom/google/firebase/provider/FirebaseInitProvider;->onCreate": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks"
+        ],
+        "Lcom/google/firebase/provider/FirebaseInitProvider;-><init>": [
+            "Landroid/content/ContentProvider;-><init>"
+        ]
+    }
+}

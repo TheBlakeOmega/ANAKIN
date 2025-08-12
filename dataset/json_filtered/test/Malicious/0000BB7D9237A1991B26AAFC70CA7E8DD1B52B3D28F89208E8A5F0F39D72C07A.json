@@ -1,0 +1,588 @@
+{
+    "activity": {
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S2$frame;->apply1": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S2$frame;->apply4": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S2;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S2$frame;->apply0": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S4$frame;->apply0": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S4$frame;->apply4": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S4$frame;->apply1": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S4;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S3$frame;->apply1": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S3$frame;->apply4": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S3;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S3$frame;->apply0": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S9$frame;->apply4": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S9;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S9$frame;->apply0": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S9$frame;->apply1": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S5$frame;->apply1": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S5;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S5$frame;->apply4": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S5$frame;->apply0": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S7$frame;->apply0": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S7$frame;->apply4": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S7;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S7$frame;->apply1": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S6;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S6$frame;->apply1": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S6$frame;->apply4": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S6$frame;->apply0": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/Screen1$frame;->apply4": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/Screen1$frame;->apply0": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/Screen1$frame;->apply1": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/Screen1;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S10$frame;->apply1": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S10$frame;->apply0": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S10;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lio/kodular/hindiinfotech999/Tally_With_GST_Final/S10$frame;->apply4": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;->onPause": [
+            "Landroid/app/Activity;->onPause"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;->onResume": [
+            "Landroid/app/Activity;->onResume"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;->onSaveInstanceState": [
+            "Landroid/app/Activity;->onSaveInstanceState"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/ContentResolver;->query",
+            "Landroid/content/Context;->getContentResolver",
+            "Landroid/content/Intent;->getBooleanExtra"
+        ],
+        "Lcom/google/android/gms/ads/AdActivity;->onDestroy": [
+            "Landroid/app/Activity;->onDestroy"
+        ],
+        "Lcom/unity3d/services/ads/adunit/AdUnitActivity;->onPause": [
+            "Landroid/app/Activity;->onPause"
+        ],
+        "Lcom/unity3d/services/ads/adunit/AdUnitActivity;->onSaveInstanceState": [
+            "Landroid/app/Activity;->onSaveInstanceState"
+        ],
+        "Lcom/unity3d/services/ads/adunit/AdUnitActivity;->onResume": [
+            "Landroid/app/Activity;->onResume"
+        ],
+        "Lcom/unity3d/services/ads/adunit/AdUnitActivity;->onDestroy": [
+            "Landroid/app/Activity;->onDestroy"
+        ],
+        "Lcom/unity3d/services/ads/adunit/AdUnitTransparentActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/Intent;->getIntExtra"
+        ],
+        "Lcom/unity3d/services/ads/adunit/AdUnitTransparentSoftwareActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/unity3d/services/ads/adunit/AdUnitSoftwareActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/facebook/ads/AudienceNetworkActivity$1;->onSaveInstanceState": [
+            "Landroid/app/Activity;->onSaveInstanceState"
+        ],
+        "Lcom/facebook/ads/AudienceNetworkActivity$1;->onResume": [
+            "Landroid/app/Activity;->onResume"
+        ],
+        "Lcom/facebook/ads/AudienceNetworkActivity;->onCreate": [
+            "Landroid/content/res/AssetManager;->open",
+            "Landroid/content/Context;->getClassLoader",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/Context;->getAssets",
+            "Landroid/content/Context;->getApplicationContext"
+        ],
+        "Lcom/facebook/ads/AudienceNetworkActivity$1;->finish": [
+            "Landroid/app/Activity;->finish"
+        ],
+        "Lcom/facebook/ads/AudienceNetworkActivity$1;->onDestroy": [
+            "Landroid/app/Activity;->onDestroy"
+        ],
+        "Lcom/facebook/ads/AudienceNetworkActivity$1;->onPause": [
+            "Landroid/app/Activity;->onPause"
+        ],
+        "Lcom/facebook/ads/AudienceNetworkActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/facebook/ads/AudienceNetworkActivity$1;->onCreate": [
+            "Landroid/app/Activity;->onCreate"
+        ],
+        "Lcom/onesignal/PermissionsActivity$1;->run": [
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getBoolean",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getMainLooper"
+        ],
+        "Lcom/onesignal/PermissionsActivity$2;->available": [
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setFlags",
+            "Landroid/app/Activity;->startActivity"
+        ],
+        "Lcom/onesignal/PermissionsActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/onesignal/PermissionsActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getBoolean",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks"
+        ],
+        "Lcom/google/android/gms/common/api/GoogleApiActivity;->onSaveInstanceState": [
+            "Landroid/app/Activity;->onSaveInstanceState"
+        ],
+        "Lcom/google/android/gms/common/api/GoogleApiActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/Intent;->getExtras",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/app/AlertDialog$Builder;-><init>",
+            "Landroid/app/AlertDialog$Builder;-><init>",
+            "Landroid/content/Context;->getTheme",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/Resources;->getResourceEntryName",
+            "Landroid/content/res/Resources$Theme;->resolveAttribute"
+        ],
+        "Lcom/google/android/gms/common/api/GoogleApiActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/google/android/gms/common/api/GoogleApiActivity;->onActivityResult": [
+            "Landroid/content/Intent;->getIntExtra",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/res/Resources;->getConfiguration",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->getBooleanExtra"
+        ]
+    },
+    "receiver": {
+        "Lcom/onesignal/GcmBroadcastReceiver;-><init>": [
+            "Landroid/content/BroadcastReceiver;-><init>"
+        ],
+        "Lcom/onesignal/GcmBroadcastReceiver;->onReceive": [
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getBoolean",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/AssetManager;->open",
+            "Landroid/content/Context;->getAssets",
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/res/Resources;->getColor",
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;->getAction",
+            "Landroid/content/Intent;->getStringExtra",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->startService",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->getExtras"
+        ],
+        "Lcom/onesignal/NotificationOpenedReceiver;-><init>": [
+            "Landroid/content/BroadcastReceiver;-><init>"
+        ],
+        "Lcom/onesignal/NotificationOpenedReceiver;->onReceive": [
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getBoolean",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/Intent;->setFlags",
+            "Landroid/content/Context;->startActivity",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/res/AssetManager;->open",
+            "Landroid/content/Context;->getAssets",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Intent;->getIntExtra",
+            "Landroid/content/Intent;->getStringExtra",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->getBooleanExtra",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks"
+        ],
+        "Lcom/onesignal/BootUpReceiver;->onReceive": [
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->getPackageName"
+        ],
+        "Lcom/onesignal/BootUpReceiver;-><init>": [
+            "Landroid/content/BroadcastReceiver;-><init>"
+        ],
+        "Lcom/onesignal/UpgradeReceiver;->onReceive": [
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->getPackageName"
+        ],
+        "Lcom/onesignal/UpgradeReceiver;-><init>": [
+            "Landroid/content/BroadcastReceiver;-><init>"
+        ]
+    },
+    "service": {
+        "Lcom/onesignal/GcmIntentService;->onHandleIntent": [
+            "Landroid/content/Intent;->getExtras",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getBoolean",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/AssetManager;->open",
+            "Landroid/content/Context;->getAssets",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/res/Resources;->getColor",
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/onesignal/GcmIntentJobService;-><init>": [
+            "Landroid/app/Service;-><init>"
+        ],
+        "Lcom/onesignal/GcmIntentJobService;->onDestroy": [
+            "Landroid/app/Service;->onDestroy"
+        ],
+        "Lcom/onesignal/GcmIntentJobService;->onCreate": [
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationContext"
+        ],
+        "Lcom/onesignal/GcmIntentJobService;->onStartCommand": [
+            "Landroid/content/Intent;-><init>"
+        ],
+        "Lcom/onesignal/GcmIntentJobService;->onHandleWork": [
+            "Landroid/content/Intent;->getExtras",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getBoolean",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/AssetManager;->open",
+            "Landroid/content/Context;->getAssets",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/res/Resources;->getColor",
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/onesignal/RestoreJobService;->onHandleWork": [
+            "Landroid/content/Intent;->getExtras",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getBoolean",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/ContentValues;->put",
+            "Landroid/content/res/Resources;->getIdentifier",
+            "Landroid/content/Context;->getResources",
+            "Landroid/content/res/AssetManager;->open",
+            "Landroid/content/Context;->getAssets",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/res/Resources;->getColor",
+            "Landroid/content/res/Resources;->getString"
+        ],
+        "Lcom/onesignal/RestoreJobService;->onDestroy": [
+            "Landroid/app/Service;->onDestroy"
+        ],
+        "Lcom/onesignal/RestoreJobService;-><init>": [
+            "Landroid/app/Service;-><init>"
+        ],
+        "Lcom/onesignal/RestoreJobService;->onCreate": [
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationContext"
+        ],
+        "Lcom/onesignal/RestoreJobService;->onStartCommand": [
+            "Landroid/content/Intent;-><init>"
+        ],
+        "Lcom/onesignal/RestoreKickoffJobService;->startProcessing": [
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getBoolean",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks"
+        ],
+        "Lcom/onesignal/SyncService;-><init>": [
+            "Landroid/app/Service;-><init>"
+        ],
+        "Lcom/onesignal/SyncService;->onStartCommand": [
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getBoolean",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks"
+        ],
+        "Lcom/onesignal/SyncJobService;->onStartJob": [
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getBoolean",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks"
+        ],
+        "Lcom/onesignal/NotificationRestoreService;->onHandleIntent": [
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Context;->getApplicationInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->putExtra",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/ComponentName;-><init>",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getBoolean",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/net/Uri;->parse",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/app/Application;->registerActivityLifecycleCallbacks",
+            "Landroid/content/Intent;->getIntExtra"
+        ]
+    },
+    "provider": {
+        "Landroid/support/v4/content/FileProvider;->attachInfo": [
+            "Landroid/content/Context;->getCacheDir",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/Context;->getPackageManager"
+        ],
+        "Landroid/support/v4/content/FileProvider;-><init>": [
+            "Landroid/content/ContentProvider;-><init>"
+        ]
+    }
+}

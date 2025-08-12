@@ -1,0 +1,301 @@
+{
+    "activity": {
+        "Lcom/dksmdz/model/LoadActivity;->onResume": [
+            "Landroid/app/Activity;->onResume"
+        ],
+        "Lcom/dksmdz/model/LoadActivity;->onPause": [
+            "Landroid/app/Activity;->onPause"
+        ],
+        "Lcom/dksmdz/model/LoadActivity;->run": [
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass"
+        ],
+        "Lcom/dksmdz/model/LoadActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/dksmdz/model/LoadActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/res/Resources;->getDrawable"
+        ],
+        "Lcom/dksmdz/model/BgActivity$3;->handleMessage": [
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/Intent;-><init>"
+        ],
+        "Lcom/dksmdz/model/BgActivity$1;->run": [
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass"
+        ],
+        "Lcom/dksmdz/model/BgActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/dksmdz/model/BgActivity$2$1;->run": [
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass"
+        ],
+        "Lcom/dksmdz/model/BgActivity$2;->onClick": [
+            "Landroid/app/Dialog;->show",
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lcom/dksmdz/model/BgActivity;->onPause": [
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/SharedPreferences;->edit",
+            "Landroid/content/SharedPreferences$Editor;->commit",
+            "Landroid/content/SharedPreferences$Editor;->putInt",
+            "Landroid/content/SharedPreferences$Editor;->putString",
+            "Landroid/content/SharedPreferences$Editor;->putLong",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/Context;->getContentResolver",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/app/Activity;->onPause"
+        ],
+        "Lcom/dksmdz/model/BgActivity;->onCreate": [
+            "Landroid/app/Dialog;->show",
+            "Landroid/net/ConnectivityManager;->getActiveNetworkInfo",
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/app/AlertDialog$Builder;-><init>",
+            "Landroid/content/res/Resources;->getDrawable",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/BgActivity;->onResume": [
+            "Landroid/content/SharedPreferences;->getLong",
+            "Landroid/content/SharedPreferences;->getInt",
+            "Landroid/content/SharedPreferences;->getString",
+            "Landroid/content/Context;->getSharedPreferences",
+            "Landroid/content/Context;->getPackageManager",
+            "Landroid/content/pm/PackageManager;->getPackageInfo",
+            "Landroid/content/Context;->getPackageName",
+            "Landroid/content/SharedPreferences;->edit",
+            "Landroid/content/SharedPreferences$Editor;->commit",
+            "Landroid/content/SharedPreferences$Editor;->putInt",
+            "Landroid/content/SharedPreferences$Editor;->putString",
+            "Landroid/content/SharedPreferences$Editor;->putLong",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/pm/PackageManager;->getApplicationInfo",
+            "Landroid/content/Context;->getFilesDir",
+            "Landroid/content/Context;->getContentResolver",
+            "Landroid/content/Context;->getApplicationContext",
+            "Landroid/app/Activity;->onResume"
+        ],
+        "Lcom/dksmdz/model/MainActivity;->onCreate": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable"
+        ],
+        "Lcom/dksmdz/model/NewActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/res/Resources;->getDrawable",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/NewActivity$7;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable"
+        ],
+        "Lcom/dksmdz/model/NewActivity$10;->onItemClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable"
+        ],
+        "Lcom/dksmdz/model/NewActivity$6;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable"
+        ],
+        "Lcom/dksmdz/model/NewActivity$8;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable"
+        ],
+        "Lcom/dksmdz/model/NewActivity$5;->onClick": [
+            "Landroid/app/AlertDialog$Builder;-><init>"
+        ],
+        "Lcom/dksmdz/model/NewActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/dksmdz/model/NewActivity;->onResume": [
+            "Landroid/app/Activity;->onResume"
+        ],
+        "Lcom/dksmdz/model/NewActivity$9;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable"
+        ],
+        "Lcom/dksmdz/model/NewActivity;->run": [
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/NewActivity;->onPause": [
+            "Landroid/app/Activity;->onPause"
+        ],
+        "Lcom/dksmdz/model/NewActivity$14;->handleMessage": [
+            "Landroid/content/Intent;->addFlags",
+            "Landroid/content/Intent;->setAction",
+            "Landroid/content/Intent;-><init>"
+        ],
+        "Lcom/dksmdz/model/ReadActivity$1;->onItemClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable"
+        ],
+        "Lcom/dksmdz/model/ReadActivity;->onResume": [
+            "Landroid/app/Activity;->onResume"
+        ],
+        "Lcom/dksmdz/model/ReadActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/dksmdz/model/ReadActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/DingActivity$1;->onItemClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable"
+        ],
+        "Lcom/dksmdz/model/DingActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/DingActivity;->onResume": [
+            "Landroid/app/Activity;->onResume"
+        ],
+        "Lcom/dksmdz/model/DingActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/dksmdz/model/SearchActivity$4;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/SearchActivity$7;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/SearchActivity$1;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/SearchActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/dksmdz/model/SearchActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/SearchActivity$8;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/SearchActivity$5;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/SearchActivity$2;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/SearchActivity$6;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/SearchActivity;->onResume": [
+            "Landroid/app/Activity;->onResume"
+        ],
+        "Lcom/dksmdz/model/SearchActivity$3;->onClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Context;->getSystemService",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable",
+            "Landroid/content/res/AssetManager;->open"
+        ],
+        "Lcom/dksmdz/model/ShowSearchActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/Intent;->getExtras"
+        ],
+        "Lcom/dksmdz/model/ShowSearchActivity$1;->onItemClick": [
+            "Landroid/content/res/Resources;->getString",
+            "Landroid/content/Intent;->putExtras",
+            "Landroid/content/Intent;-><init>",
+            "Landroid/content/Intent;->setClass",
+            "Landroid/content/res/Resources;->getDrawable"
+        ],
+        "Lcom/dksmdz/model/ShowSearchActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/dksmdz/model/MoreActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate"
+        ],
+        "Lcom/dksmdz/model/MoreActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/dksmdz/model/ShowActivity;-><init>": [
+            "Landroid/app/Activity;-><init>"
+        ],
+        "Lcom/dksmdz/model/ShowActivity;->onCreate": [
+            "Landroid/app/Activity;->onCreate",
+            "Landroid/content/Intent;->getExtras"
+        ]
+    },
+    "receiver": {},
+    "service": {},
+    "provider": {}
+}
