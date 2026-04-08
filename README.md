@@ -1,7 +1,25 @@
 #  grAph NeurAl networK for androId malware detectioN (ANAKIN)
 
 The repository contains code referred to the work:
-(insert paper information)
+_Giuseppina Andresini, Annalisa Appice, Vincenzo Belvedere, Giuseppe Fiameni, Donato Malerba_
+
+[Anakin: explainable android malware detection with graph neural networks](https://link.springer.com/article/10.1186/s42400-026-00552-z) 
+
+Please cite our work if you find it useful for your research and work.
+```
+  @article{2026anakin,
+  title={Anakin: explainable android malware detection with graph neural networks},
+  author={Andresini, Giuseppina and Appice, Annalisa and Belvedere, Vincenzo and Fiameni, Giuseppe and Malerba, Donato},
+  journal={Cybersecurity},
+  volume={9},
+  pages={116},
+  year={2026},
+  publisher={Springer},
+  doi={10.1186/s42400-026-00552-z}
+}
+```
+
+![ANAKIN](https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs42400-026-00552-z/MediaObjects/42400_2026_552_Fig1_HTML.png?as=webp)
 
 ## Code requirements
 The code relies on the following python3.9+ libs.
